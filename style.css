@@ -1,0 +1,51 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #1F2937;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(225, 225, 225);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    font-size: 26px;
+}
+
+.links {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.content {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shinji {
+    width: 600px;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
