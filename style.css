@@ -6,7 +6,7 @@
 .header {
     background-color: #1F2937;
     display: flex;
-    padding: 16px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -29,7 +29,7 @@ a {
 
 .links {
     display: flex;
-    gap: 14px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -104,4 +104,31 @@ h2 {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+}
+
+.quote {
+    background-color: #cccccc;
+    padding: 80px;
+}
+
+.qucontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotefont {
+    color: #8e8e8e;
+    font-size: 36px;
+    font-style: italic;
+    max-width: 800px;
+}
+
+.kaworu {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
