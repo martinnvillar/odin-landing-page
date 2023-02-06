@@ -132,3 +132,27 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+.foot1 {
+    background-color: #f9f9f9;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.action {
+    background-color: #1F2937;
+    border-radius: 5px;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding: 50px;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
