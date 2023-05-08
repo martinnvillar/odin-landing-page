@@ -3,28 +3,50 @@
     margin: 0px;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('/webfonts/Times-New-Roman-MT-Std-Bold-Condensed.otf') format('truetype');
+  }
+
+body {
+    background-image: url(img/bkground.jpg);
+}
+
 .header {
-    background-color: #1F2937;
+    background-color: #1f293789;
     display: flex;
-    padding: 20px;
+    padding: 30px;
+    margin-top: -10px;
+    margin-bottom: -15px;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 36px;
+    font-weight: lighter;
+    font-size: 40px;
     color: rgb(225, 225, 225);
+    font-family: 'MyFont';
+    text-shadow: 1px 1px 2px black;
 }
 
 ul {
     list-style-type: none;
 }
 
-a {
+.headList {
     text-decoration: none;
     color: rgb(225, 225, 225);
-    font-size: 26px;
+    font-size: 22px;
+    font-family: 'MyFont';
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px black;
+    transition: 0.2s ease-in-out;
+}
+
+.headList:hover {
+    cursor: pointer;
+    color: rgb(117, 117, 117);
 }
 
 .links {
@@ -40,25 +62,46 @@ a {
     align-items: center;
     gap: 70px;
     padding: 80px;
+    background-image: url(img/bkground.jpg);
 }
 
 .shinji {
     width: 500px;
-    border-radius: 25px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px black;
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+}
+
+.shinji:hover {
+    opacity: 1;
+    transform: scale(0.95);
 }
 
 .txt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
-    color: rgb(225, 225, 225)
+    justify-content: space-between;
+    max-width: 400px;
+    height: 450px;
+    color: rgb(225, 225, 225);
+    background-color: #1f2937a3;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.whatEva { 
+    text-align: justify;
 }
 
 h1 {
     font-weight: 900;
     margin-bottom: 10px;
     font-size: 40px;
+    font-family: 'MyFont';
+    text-shadow: 1px 1px 2px black;
 }
 
 button {
@@ -69,6 +112,12 @@ button {
     color: white;
     width: 100px;
     margin-top: 10px;
+    transition: 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background-color: rgb(32, 51, 109);
+    cursor: pointer;
   }
 
 .information {
@@ -82,14 +131,16 @@ button {
 .imginfo {
     max-width: 100%;
     height: 200px;
-    border-radius: 25px;
+    border-radius: 5px;
     display: flex;
+    border: 1px solid #1f2937;
 }
 
 h2 {
     margin-bottom: 20px;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 30px;
+    font-family: 'MyFamily';
 }
 
 .imgdiv {
@@ -138,6 +189,17 @@ h2 {
     padding: 80px;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.footLink {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footLink:hover {
+    color: #ffffff;
+    text-decoration:underline;
 }
 
 .action {
@@ -155,4 +217,11 @@ footer {
     color: #f9f9f9;
     text-align: center;
     padding: 20px;
+}
+
+.txtact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
 }
